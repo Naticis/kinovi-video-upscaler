@@ -1,0 +1,5 @@
+This container downloads and uses the official Real-ESRGAN project:
+https://github.com/xinntao/Real-ESRGAN
+
+Real-ESRGAN is licensed under the BSD 3-Clause License by its upstream authors/contributors.
+Keep the upstream LICENSE file included in /app/Real-ESRGAN inside the built container.
