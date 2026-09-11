@@ -21,13 +21,14 @@ WORKDIR /app/Real-ESRGAN
 # Pin versions that remain compatible with the older BasicSR/Real-ESRGAN inference stack.
 RUN pip install --upgrade pip setuptools wheel \
     && pip install \
-       basicsr==1.4.2 \
-       facexlib==0.3.0 \
-       gfpgan==1.3.8 \
-       ffmpeg-python==0.2.0 \
-       opencv-python-headless==4.9.0.80 \
-       pillow==10.2.0 \
-       tqdm==4.66.2 \
+      numpy==1.26.4 \
+    basicsr==1.4.2 \
+    facexlib==0.3.0 \
+    gfpgan==1.3.8 \
+    ffmpeg-python==0.2.0 \
+    opencv-python-headless==4.9.0.80 \
+    pillow==10.2.0 \
+    tqdm==4.66.2 \
     && python setup.py develop
 
 # Preload the x2 model so cold starts do not have to fetch it.
